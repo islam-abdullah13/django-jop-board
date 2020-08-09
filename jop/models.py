@@ -11,7 +11,7 @@ JOP_TYPE = (
 
 def image_upload (instance , filename):
     imagename , extenstion = filename.split(".")
-    return "jop_image/%s.%s"%(instance.id , extenstion) 
+    return "jop_image/%s.%s"%(instance.id,extenstion) 
 
 class Jop (models.Model): #Table
     title = models.CharField (max_length=100) #column
