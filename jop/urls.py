@@ -1,8 +1,10 @@
-from django.urls import path
+from django.urls import path , include
 from . import views
+
+app_name = "jop"
 
 urlpatterns = [
     
     path('',views.jop_list),
-    path('int:ip',views.jop_detail)
+    path('<int:id>',views.jop_detail, name = "jop_details")
 ]
