@@ -122,7 +122,7 @@
                                             <img src="img/svg_icon/1.svg" alt="">
                                         </div>
                                         <div class="jobs_conetent">
-                                            <a href="{% url 'jops:jop_details' jop.id %}"><h4>{{jop.title}}</h4></a>
+                                            <a href="{% url 'jops:jop_details' jop.slug %}"><h4>{{jop.title}}</h4></a>
                                             <div class="links_locat d-flex align-items-center">
                                                 <div class="location">
                                                     <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -136,7 +136,7 @@
                                     <div class="jobs_right">
                                         <div class="apply_now">
                                             <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="{% url 'jops:jop_details' jop.id %}" class="boxed-btn3">Apply Now</a>
+                                            <a href="{% url 'jops:jop_details' jop.slug %}" class="boxed-btn3">Apply Now</a>
                                         </div>
                                         <div class="date">
                                             <p>Date line: {{jop.published_at|date:'d M o'}}</p>
