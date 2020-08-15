@@ -6,7 +6,7 @@ from .models import Applyer , Jop
 class Applyform (forms.ModelForm):
     class Meta :
         model = Applyer
-        fields = ('name','email' , 'website' , 'cv' ,'coverletter')
+        fields = ['name','email' , 'website' , 'cv' ,'coverletter']
 
 
 class JopForm (forms.ModelForm):

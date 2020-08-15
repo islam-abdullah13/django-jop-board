@@ -44,5 +44,5 @@ def add_jop(request):
     else : 
         form = JopForm()
 
-    context = {'form':form}
+    context = {'form':form} 
     return render(request,'jop/add_jop.html',context)
